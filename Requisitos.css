@@ -184,7 +184,7 @@
 .step-content h4 {
     text-align: center;
     margin: 0;
-    color: #010000;
+    color: #000000;
     font-size: 1.2rem;
     font-style: italic;
 }
@@ -192,7 +192,6 @@
 .step-card.ultimo {
 
     border-left-color: var(--accent);
-    color: white;
     background: #6f2e2e78;
 }
 
