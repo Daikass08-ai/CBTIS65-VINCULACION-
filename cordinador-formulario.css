@@ -1,0 +1,116 @@
+/* --- ESTILOS PARA CONTACTO Y FORMULARIO --- */
+
+#coordinador.section-dest {
+    background: #ffffff;
+    margin: 50px auto;
+    max-width: 1000px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#coordinador h2 {
+    color: var(--rojo);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid var(--amarillo-cbtis);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#coordinador p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Estilos del Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form label {
+    align-self: flex-start;
+    margin-left: 10%;
+    font-weight: bold;
+    color: var(--gris-oscuro);
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--rojo);
+    outline: none;
+    background-color: #fffcfc;
+}
+
+input[type="submit"] {
+    background-color: var(--rojo);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--negro);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* --- ESTILOS PARA UBICACIÓN --- */
+
+#imagen.section-dest {
+    background: var(--gris-oscuro);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 50px;
+}
+
+#imagen h2 {
+    color: var(--amarillo-cbtis);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#imagen img {
+    border: 8px solid white;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+    filter: grayscale(20%);
+}
+
+#imagen img:hover {
+    transform: scale(1.02);
+    filter: grayscale(0%);
+}
+
+/* Ajuste de espaciado para las secciones con ID duplicado */
+/* Nota: En tu HTML tienes dos IDs "coordinador", se recomienda cambiarlos, 
+   pero este CSS aplicará a ambos. */
+.section-dest {
+    scroll-margin-top: 80px; /* Para que al saltar no tape el nav */
+}
